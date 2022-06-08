@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const Hotels = () => {
   return (
-    <>
+    <div className="container">
       <h1>Hotels page</h1>
 
       <ul className="list">
@@ -24,7 +24,7 @@ const Hotels = () => {
       </ul>
 
       <Outlet />
-    </>
+    </div>
   );
 };
 

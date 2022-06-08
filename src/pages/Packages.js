@@ -1,5 +1,9 @@
 const Packages = () => {
-  return <h1>Packages page</h1>;
+  return (
+    <div className="container">
+      <h1>Packages page</h1>
+    </div>
+  );
 };
 
 export default Packages;
