@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900);
+
+.App {
+font-family: 'Roboto', sans-serif;
+text-align: center;
+width:800px;
+margin: 0 auto;
+}
+
+.active {
+background-color: red;
+}
+
+.App-header {
+  height: 80px;
+  padding: 20px;
+}
+
+.nav-item {
+  padding: 20px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: #ff2626;
+}
+
+.list {
+  text-align: left;
+}
