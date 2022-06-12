@@ -1,6 +1,8 @@
 import "./styles.css";
 
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
 
 import Flights from "./pages/Flights";
 import Packages from "./pages/Packages";
@@ -12,47 +14,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav>
-          <NavLink
-            className={`nav-item ${({ isActive }) =>
-              isActive ? "active" : ""}`}
-            to="/"
-          >
-            Home page
-          </NavLink>
-
-          <NavLink
-            className={`nav-item ${({ isActive }) =>
-              isActive ? "active" : ""}`}
-            to="flights"
-          >
-            Flights
-          </NavLink>
-          <NavLink
-            className={`nav-item ${({ isActive }) =>
-              isActive ? "active" : ""}`}
-            to="packages"
-          >
-            Packages
-          </NavLink>
-          <NavLink
-            className={`nav-item ${({ isActive }) =>
-              isActive ? "active" : ""}`}
-            to="hotels"
-          >
-            Hotels
-          </NavLink>
-          <NavLink
-            className={`nav-item ${({ isActive }) =>
-              isActive ? "active" : ""}`}
-            to="ololo"
-          >
-            Fake link
-          </NavLink>
-        </nav>
-      </header>
-
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="flights" element={<Flights />} />
